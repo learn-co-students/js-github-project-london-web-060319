@@ -38,14 +38,19 @@ const loginRepoFunctionlity=(userObj,logName,header)=>{
 
 function showUserRepo(userRepo){
     userRepo.forEach(element => {
-        let list= document.querySelector("#github-container")
-        let doc= document.createElement("h3")
-        doc.innerText= element.html_url
-        list.appendChild(doc) 
+       renderRepo(element)
     });
 }
 
+function renderRepo(element){
+    let list= document.querySelector("#github-container")
+    let repo= document.createElement("li")
+    repo.innerText= element.name 
+    list.appendChild(repo)
+}
+
 //Ask gabe about mapping through elements and setting limit
+
 
 
 
