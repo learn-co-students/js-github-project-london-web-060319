@@ -4,8 +4,10 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
   <title>Document</title>
-  <script src='js/index.js'></script>
+  <script defer src='js/index.js'></script>
   <link rel='stylesheet' href='index.css'/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 </head>
 <body>
   <div id='main'>
@@ -13,6 +15,10 @@
     <h2>GitHub Search</h2>
 
     <form id='github-form'>
+      <select id="query-select">
+        <option value="user">user</option>
+        <option value="repo">repo</option>
+      </select>
       <input id='search' type='text' name='search'>
       <input type='submit' name='submit'/>
     </form>

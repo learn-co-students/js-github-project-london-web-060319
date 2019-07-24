@@ -11,3 +11,13 @@
 ul {
   list-style: none;
 }
+
+.user-avatar {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#user-list {
+  text-align: center;
+}
